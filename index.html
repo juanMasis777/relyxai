@@ -505,21 +505,10 @@
         </div>
     </div>
 
-    <label for="oCountry" data-i18n="labelCountry">Country</label>
-    <select id="oCountry">
-        <option value="US">United States</option>
-        <option value="CA">Canada</option>
-    </select>
-
     <label for="oState" data-i18n="labelState">State</label>
     <select id="oState"></select>
 
-    <label for="oQty" data-i18n="labelQty">Quantity</label>
-    <select id="oQty">
-        <option value="YOUR_STRIPE_LINK_FOR_1_UNIT">1 Relyxai — $31.99</option>
-        <option value="YOUR_STRIPE_LINK_FOR_2_UNITS">2 Relyxai — $54.99</option>
-        <option value="YOUR_STRIPE_LINK_FOR_3_UNITS">3 Relyxai — $74.99</option>
-    </select>
+    <input type="hidden" id="oQty" value="https://buy.stripe.com/test_8x2cN568F0zr4S8aYGdAk00">
 
     <button type="submit" id="stripeBtn" class="stripe-btn">
         <span id="btnText" data-i18n="checkoutBtn">Continue to secure checkout</span>

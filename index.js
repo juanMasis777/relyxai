@@ -130,7 +130,6 @@ labelCity: "City",
 labelZip: "ZIP code",
 labelCountry: "Country",
 labelState: "State",
-labelQty: "Quantity",
 checkoutBtn: "Continue to secure checkout",
 loadingText: "Loading...",
 secureNote: "Secure checkout powered by Stripe. Your payment information is protected.",
@@ -278,7 +277,6 @@ labelCity: "Ciudad",
 labelZip: "Código ZIP",
 labelCountry: "País",
 labelState: "Estado",
-labelQty: "Cantidad",
 checkoutBtn: "Continuar al pago seguro",
 loadingText: "Cargando...",
 secureNote: "Pago seguro por Stripe. Tu información de pago está protegida.",
@@ -298,8 +296,7 @@ faq4Text: "Relyxai es un producto de bienestar. No está diseñado para diagnost
 
 let currentLang = "en";
 
-const STATES = {
-US: [
+const STATES_US = [
 ["AL","Alabama"],["AK","Alaska"],["AZ","Arizona"],["AR","Arkansas"],
 ["CA","California"],["CO","Colorado"],["CT","Connecticut"],["DE","Delaware"],
 ["FL","Florida"],["GA","Georgia"],["HI","Hawaii"],["ID","Idaho"],
@@ -313,15 +310,7 @@ US: [
 ["SD","South Dakota"],["TN","Tennessee"],["TX","Texas"],["UT","Utah"],
 ["VT","Vermont"],["VA","Virginia"],["WA","Washington"],["WV","West Virginia"],
 ["WI","Wisconsin"],["WY","Wyoming"],["DC","Washington D.C."]
-],
-CA: [
-["AB","Alberta"],["BC","British Columbia"],["MB","Manitoba"],
-["NB","New Brunswick"],["NL","Newfoundland and Labrador"],
-["NS","Nova Scotia"],["ON","Ontario"],["PE","Prince Edward Island"],
-["QC","Quebec"],["SK","Saskatchewan"],["NT","Northwest Territories"],
-["NU","Nunavut"],["YT","Yukon"]
-]
-};
+];
 
 function setLanguage(lang) {
 currentLang = lang;
@@ -347,14 +336,12 @@ langBtn.textContent = lang === "en" ? "ES" : "EN";
 localStorage.setItem("relyxaiLang", lang);
 }
 
-function updateStates(country) {
+function updateStates() {
 const stateSelect = document.getElementById("oState");
 
 if (!stateSelect) return;
 
-const label = currentLang === "es"
-? country === "CA" ? "Provincia" : "Estado"
-: country === "CA" ? "Province" : "State";
+const label = currentLang === "es" ? "Estado" : "State";
 
 stateSelect.innerHTML = "";
 
@@ -363,9 +350,7 @@ defaultOption.value = "";
 defaultOption.textContent = label;
 stateSelect.appendChild(defaultOption);
 
-const list = STATES[country] || [];
-
-list.forEach(function (item) {
+STATES_US.forEach(function (item) {
 const option = document.createElement("option");
 option.value = item[0];
 option.textContent = item[1];
@@ -400,7 +385,7 @@ currentLang = "en";
 }
 
 setLanguage(currentLang);
-updateStates("US");
+updateStates();
 
 const langBtn = document.getElementById("langBtn");
 
@@ -408,19 +393,7 @@ if (langBtn) {
 langBtn.addEventListener("click", function () {
     const newLang = currentLang === "en" ? "es" : "en";
     setLanguage(newLang);
-
-    const countrySelect = document.getElementById("oCountry");
-    if (countrySelect) {
-    updateStates(countrySelect.value);
-    }
-});
-}
-
-const countrySelect = document.getElementById("oCountry");
-
-if (countrySelect) {
-countrySelect.addEventListener("change", function () {
-    updateStates(countrySelect.value);
+    updateStates();
 });
 }
 
@@ -520,7 +493,6 @@ const street = document.getElementById("oStreet").value.trim();
 const city = document.getElementById("oCity").value.trim();
 const zip = document.getElementById("oZip").value.trim();
 const state = document.getElementById("oState").value.trim();
-const country = document.getElementById("oCountry").value.trim();
 const qty = document.getElementById("oQty");
 
 const formMessage = document.getElementById("formOk");
@@ -537,7 +509,7 @@ showFormMessage(msg, "error");
 return;
 }
 
-if (!street || !city || !zip || !state || !country) {
+if (!street || !city || !zip || !state) {
 const msg = currentLang === "es"
     ? "Por favor completa tu dirección de envío."
     : "Please complete your shipping address.";
@@ -546,12 +518,12 @@ showFormMessage(msg, "error");
 return;
 }
 
-const stripeLink = qty.options[qty.selectedIndex].value;
+const stripeLink = qty.value;
 
 if (!stripeLink || stripeLink.startsWith("YOUR_STRIPE")) {
 const msg = currentLang === "es"
-    ? "⚠️ El pago todavía no está configurado. Agrega tus links reales de Stripe."
-    : "⚠️ Payment not configured yet. Add your real Stripe links.";
+    ? "⚠️ El pago todavía no está configurado."
+    : "⚠️ Payment not configured yet.";
 
 showFormMessage(msg, "error");
 return;
