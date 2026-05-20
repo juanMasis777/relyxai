@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Relyxai — Smart Neck Relief</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- TOP ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+<span data-i18n="announcement">🚚 Free Shipping in USA · Limited Launch Offer</span>
+</div>
+
+<!-- NAVBAR -->
+<nav id="nav">
+<div class="logo">
+    <div class="brand-mark">R</div>
+    <div class="brand-text">
+    <span>Relyxai</span>
+    <small data-i18n="brandSub">Smart Relief</small>
+    </div>
+</div>
+
+<ul class="nav-links">
+    <li><a href="#how" data-i18n="navHow">How it works</a></li>
+    <li><a href="#features" data-i18n="navFeatures">Features</a></li>
+    <li><a href="#reviews" data-i18n="navReviews">Reviews</a></li>
+    <li><a href="#order" data-i18n="navBuy">Buy Now</a></li>
+</ul>
+
+<div class="nav-actions">
+    <button class="lang-btn" id="langBtn">ES</button>
+    <button class="nav-cta" onclick="scrollToSection('#order')" data-i18n="navCta">
+    Get Relyxai — $31.99
+    </button>
+</div>
+
+<button class="hamburger" id="ham">☰</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-left">
+    <div class="hero-eyebrow" data-i18n="heroEyebrow">
+    ⚡ EMS + Heat Therapy · Smart Neck Relief
+    </div>
+
+    <h1>
+    <span data-i18n="heroTitle1">Feel lighter.</span><br>
+    <span data-i18n="heroTitle2">Relax deeper.</span><br>
+    <span class="gradient-text" data-i18n="heroTitle3">Recover smarter.</span>
+    </h1>
+
+    <p class="hero-sub" data-i18n="heroSub">
+    Relyxai is a premium EMS neck massager designed to help reduce tension,
+    stiffness, and daily stress with soothing heat and intelligent pulse therapy —
+    all from the comfort of home.
+    </p>
+
+    <div class="price-block">
+    <span class="price-main">$31.99</span>
+    <span class="price-old">$59.99</span>
+    <span class="price-badge" data-i18n="launchOffer">Launch Offer</span>
+    </div>
+
+    <div class="hero-actions">
+    <button class="btn-buy" onclick="scrollToSection('#order')" data-i18n="heroBtn1">
+        Order Relyxai Now
+    </button>
+    <button class="btn-secondary" onclick="scrollToSection('#features')" data-i18n="heroBtn2">
+        Explore Features
+    </button>
+    </div>
+
+    <div class="hero-trust">
+    <div class="trust-chip"><div class="trust-dot"></div><span data-i18n="trust1">Free shipping in USA</span></div>
+    <div class="trust-chip"><div class="trust-dot"></div><span data-i18n="trust2">30-day returns</span></div>
+    <div class="trust-chip"><div class="trust-dot"></div><span data-i18n="trust3">1-year warranty</span></div>
+    </div>
+</div>
+
+<div class="hero-right">
+    <div class="product-frame">
+    <img src="images/product.jpg" alt="Relyxai EMS Neck Massager">
+    </div>
+
+    <div class="float-tag ft1">
+    <span class="num">42°C</span>
+    <span class="lbl" data-i18n="float1">Soothing Heat</span>
+    </div>
+
+    <div class="float-tag ft2">
+    <span class="num">15</span>
+    <span class="lbl" data-i18n="float2">Minutes Relief</span>
+    </div>
+
+    <div class="float-tag ft3">
+    <span class="num">6</span>
+    <span class="lbl" data-i18n="float3">Pulse Modes</span>
+    </div>
+</div>
+</section>
+
+<!-- DIVIDER -->
+<section class="divider">
+<div class="divider-inner">
+    <div class="divider-item"><span>✓</span> <span data-i18n="divider1">EMS Pulse Therapy</span></div>
+    <div class="divider-item"><span>✓</span> <span data-i18n="divider2">Gentle Heat Comfort</span></div>
+    <div class="divider-item"><span>✓</span> <span data-i18n="divider3">Portable & Lightweight</span></div>
+    <div class="divider-item"><span>✓</span> <span data-i18n="divider4">Rechargeable Design</span></div>
+    <div class="divider-item"><span>✓</span> <span data-i18n="divider5">Daily Stress Relief</span></div>
+
+    <div class="divider-item"><span>✓</span> <span data-i18n="divider1">EMS Pulse Therapy</span></div>
+    <div class="divider-item"><span>✓</span> <span data-i18n="divider2">Gentle Heat Comfort</span></div>
+    <div class="divider-item"><span>✓</span> <span data-i18n="divider3">Portable & Lightweight</span></div>
+    <div class="divider-item"><span>✓</span> <span data-i18n="divider4">Rechargeable Design</span></div>
+    <div class="divider-item"><span>✓</span> <span data-i18n="divider5">Daily Stress Relief</span></div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how">
+<div class="eyebrow" data-i18n="howEyebrow">How it works</div>
+<h2 class="section-title" data-i18n="howTitle">Smart relief in three simple steps.</h2>
+<p class="section-sub" data-i18n="howSub">
+    Relyxai combines gentle electrical muscle stimulation with warming comfort
+    to help relax your neck after work, workouts, long drives, or screen time.
+</p>
+
+<div class="how-grid">
+    <div class="how-card">
+    <div class="how-step" data-i18n="step1">Step 01</div>
+    <span class="how-icon">🧘</span>
+    <h3 data-i18n="howCard1Title">Place it on your neck</h3>
+    <p data-i18n="howCard1Text">
+        The lightweight curved design sits comfortably around your neck
+        without feeling heavy or bulky.
+    </p>
+    </div>
+
+    <div class="how-card">
+    <div class="how-step" data-i18n="step2">Step 02</div>
+    <span class="how-icon">⚡</span>
+    <h3 data-i18n="howCard2Title">Choose your mode</h3>
+    <p data-i18n="howCard2Text">
+        Select your preferred EMS pulse level and massage mode depending
+        on how much tension you feel.
+    </p>
+    </div>
+
+    <div class="how-card">
+    <div class="how-step" data-i18n="step3">Step 03</div>
+    <span class="how-icon">🔥</span>
+    <h3 data-i18n="howCard3Title">Relax with heat</h3>
+    <p data-i18n="howCard3Text">
+        Soothing warmth helps create a calming experience while your neck
+        begins to feel more relaxed.
+    </p>
+    </div>
+</div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+<div class="eyebrow" data-i18n="featuresEyebrow">Premium features</div>
+<h2 class="section-title" data-i18n="featuresTitle">
+    Designed for people who carry stress in their neck.
+</h2>
+<p class="section-sub" data-i18n="featuresSub">
+    Whether you work on a computer, drive often, train hard, or simply need
+    a moment to reset, Relyxai gives you a convenient way to relax.
+</p>
+
+<div class="usecases">
+    <div class="usecase-img">
+    <img src="images/lifestyle.jpg" alt="Relyxai used at home">
+    </div>
+
+    <div class="usecase-points">
+    <div class="upoint">
+        <div class="upoint-icon">💻</div>
+        <div>
+        <h4 data-i18n="feature1Title">After long screen time</h4>
+        <p data-i18n="feature1Text">
+            Great for people who spend hours working at a desk, coding,
+            studying, or using a laptop.
+        </p>
+        </div>
+    </div>
+
+    <div class="upoint">
+        <div class="upoint-icon">🚗</div>
+        <div>
+        <h4 data-i18n="feature2Title">After driving</h4>
+        <p data-i18n="feature2Text">
+            Helps you relax your neck after commuting, deliveries,
+            travel, or long hours in the car.
+        </p>
+        </div>
+    </div>
+
+    <div class="upoint">
+        <div class="upoint-icon">🏋️</div>
+        <div>
+        <h4 data-i18n="feature3Title">After workouts</h4>
+        <p data-i18n="feature3Text">
+            Use it after training days when your neck and shoulders
+            feel tight or tired.
+        </p>
+        </div>
+    </div>
+
+    <div class="upoint">
+        <div class="upoint-icon">🌙</div>
+        <div>
+        <h4 data-i18n="feature4Title">Evening relaxation</h4>
+        <p data-i18n="feature4Text">
+            A simple way to unwind at night and create a calm wellness routine.
+        </p>
+        </div>
+    </div>
+    </div>
+</div>
+</section>
+
+<!-- 6 MODES SECTION (NEW) -->
+<section class="section">
+<div class="eyebrow" data-i18n="modesEyebrow">Therapeutic modes</div>
+<h2 class="section-title" data-i18n="modesTitle">
+    6 modes for fully customized relief.
+</h2>
+<p class="section-sub" data-i18n="modesSub">
+    Personalize your massage with adjustable intensity levels and choose
+    the mode that best fits how your neck feels today.
+</p>
+
+<div class="heating-block">
+    <div class="heating-img">
+    <img src="images/modes.jpg" alt="Relyxai 6 therapeutic modes">
+    </div>
+
+    <div class="heating-details">
+    <div class="temp-badge">
+        <span class="deg">9</span>
+        <span class="desc" data-i18n="modesIntensityDesc">Intensity levels from weak to strong</span>
+    </div>
+
+    <div class="detail-card">
+        <div class="detail-label" data-i18n="mode1Label">Mode 01</div>
+        <h4 data-i18n="mode1Title">Massage Mode</h4>
+        <p data-i18n="mode1Text">
+        Soft, rhythmic stimulation that mimics the feeling of a relaxing massage.
+        </p>
+    </div>
+
+    <div class="detail-card">
+        <div class="detail-label" data-i18n="mode2Label">Mode 02</div>
+        <h4 data-i18n="mode2Title">Acupuncture Mode</h4>
+        <p data-i18n="mode2Text">
+        Targeted pulses inspired by traditional acupuncture for deeper neck relief.
+        </p>
+    </div>
+
+    <div class="detail-card">
+        <div class="detail-label" data-i18n="mode3Label">Mode 03</div>
+        <h4 data-i18n="mode3Title">Scraping & Pulsing</h4>
+        <p data-i18n="mode3Text">
+        Includes scraping and pulsing modes to vary the experience and target tension.
+        </p>
+    </div>
+    </div>
+</div>
+</section>
+
+<!-- HEAT FEATURE -->
+<section class="section">
+<div class="eyebrow" data-i18n="heatEyebrow">Electric pulse therapy</div>
+<h2 class="section-title" data-i18n="heatTitle">
+    Comforting warmth when your neck feels tense.
+</h2>
+<p class="section-sub" data-i18n="heatSub">
+    Relyxai uses constant warmth and EMS stimulation to create a relaxing,
+    spa-like experience wherever you are.
+</p>
+
+<div class="heating-block">
+    <div class="heating-details">
+    <div class="temp-badge">
+        <span class="deg">42°C</span>
+        <span class="desc" data-i18n="tempDesc">Gentle warming comfort for daily use</span>
+    </div>
+
+    <div class="detail-card">
+        <div class="detail-label" data-i18n="detail1Label">Smart warmth</div>
+        <h4 data-i18n="detail1Title">Gentle heat comfort</h4>
+        <p data-i18n="detail1Text">
+        The warming function helps create a soothing sensation during each session.
+        </p>
+    </div>
+
+    <div class="detail-card">
+        <div class="detail-label" data-i18n="detail2Label">Pulse therapy</div>
+        <h4 data-i18n="detail2Title">EMS stimulation</h4>
+        <p data-i18n="detail2Text">
+        EMS pulses help stimulate the neck area with adjustable intensity levels.
+        </p>
+    </div>
+
+    <div class="detail-card">
+        <div class="detail-label" data-i18n="detail3Label">Daily wellness</div>
+        <h4 data-i18n="detail3Title">Use it anywhere</h4>
+        <p data-i18n="detail3Text">
+        Use Relyxai while reading, working, relaxing on the couch, or preparing for sleep.
+        </p>
+    </div>
+    </div>
+
+    <div class="heating-img">
+    <img src="images/heat.jpg" alt="Relyxai electric pulse therapy">
+    </div>
+</div>
+</section>
+
+<!-- BATTERY SECTION (NEW) -->
+<section class="section">
+<div class="eyebrow" data-i18n="batteryEyebrow">Long-lasting battery</div>
+<h2 class="section-title" data-i18n="batteryTitle">
+    Rechargeable with fast USB charging.
+</h2>
+<p class="section-sub" data-i18n="batterySub">
+    Enjoy extended use without worrying about cables.
+    Relyxai is designed to stay powered for multiple relaxing sessions.
+</p>
+
+<div class="heating-block">
+    <div class="heating-img">
+    <img src="images/battery.jpg" alt="Relyxai rechargeable battery">
+    </div>
+
+    <div class="heating-details">
+    <div class="temp-badge">
+        <span class="deg">3h</span>
+        <span class="desc" data-i18n="batteryChargeDesc">Full charge time with USB</span>
+    </div>
+
+    <div class="detail-card">
+        <div class="detail-label" data-i18n="battery1Label">USB charging</div>
+        <h4 data-i18n="battery1Title">Fast and easy</h4>
+        <p data-i18n="battery1Text">
+        Charge it anywhere with a standard USB cable — at home, the office, or on the road.
+        </p>
+    </div>
+
+    <div class="detail-card">
+        <div class="detail-label" data-i18n="battery2Label">Long battery life</div>
+        <h4 data-i18n="battery2Title">Multiple sessions per charge</h4>
+        <p data-i18n="battery2Text">
+        Enjoy several relaxation sessions between charges without losing performance.
+        </p>
+    </div>
+
+    <div class="detail-card">
+        <div class="detail-label" data-i18n="battery3Label">Cable-free relief</div>
+        <h4 data-i18n="battery3Title">Total freedom of movement</h4>
+        <p data-i18n="battery3Text">
+        No annoying cables while you relax. Use it freely wherever you want.
+        </p>
+    </div>
+    </div>
+</div>
+</section>
+
+<!-- STATS -->
+<section class="section">
+<div class="eyebrow" data-i18n="statsEyebrow">Why customers love it</div>
+<h2 class="section-title" data-i18n="statsTitle">
+    A small device that fits into your daily routine.
+</h2>
+
+<div class="stats-row">
+    <div class="stat-box">
+    <div class="stat-num" data-target="15">0</div>
+    <div class="stat-lbl" data-i18n="stat1">Minute sessions</div>
+    </div>
+
+    <div class="stat-box">
+    <div class="stat-num" data-target="6">0</div>
+    <div class="stat-lbl" data-i18n="stat2">Massage modes</div>
+    </div>
+
+    <div class="stat-box">
+    <div class="stat-num" data-target="42" data-suffix="°C">0</div>
+    <div class="stat-lbl" data-i18n="stat3">Heat comfort</div>
+    </div>
+
+    <div class="stat-box">
+    <div class="stat-num" data-target="4.8" data-float="true">0</div>
+    <div class="stat-lbl" data-i18n="stat4">Average rating</div>
+    </div>
+</div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section" id="reviews">
+<div class="eyebrow" data-i18n="reviewsEyebrow">Reviews</div>
+<h2 class="section-title" data-i18n="reviewsTitle">What customers are saying.</h2>
+<p class="section-sub" data-i18n="reviewsSub">
+    Realistic wellness comfort for everyday stress, work tension, and long days.
+</p>
+
+<div class="reviews-grid">
+    <div class="review">
+    <div class="stars">★★★★★</div>
+    <p class="review-body" data-i18n="review1">
+        “I use it after work and it really helps me relax my neck. The heat feels amazing.”
+    </p>
+    <div class="review-author">
+        <div class="rv-avatar">M</div>
+        <div>
+        <div class="rv-name">Maria S.</div>
+        <div class="rv-info" data-i18n="verified">Verified customer</div>
+        </div>
+    </div>
+    </div>
+
+    <div class="review">
+    <div class="stars">★★★★★</div>
+    <p class="review-body" data-i18n="review2">
+        “Very comfortable and easy to use. I like that I can change the intensity.”
+    </p>
+    <div class="review-author">
+        <div class="rv-avatar">J</div>
+        <div>
+        <div class="rv-name">Jason R.</div>
+        <div class="rv-info" data-i18n="verified">Verified customer</div>
+        </div>
+    </div>
+    </div>
+
+    <div class="review">
+    <div class="stars">★★★★★</div>
+    <p class="review-body" data-i18n="review3">
+        “Perfect for after long hours on the computer. Looks premium too.”
+    </p>
+    <div class="review-author">
+        <div class="rv-avatar">A</div>
+        <div>
+        <div class="rv-name">Amanda L.</div>
+        <div class="rv-info" data-i18n="verified">Verified customer</div>
+        </div>
+    </div>
+    </div>
+</div>
+</section>
+
+<!-- ORDER -->
+<section class="section order-section" id="order">
+<div class="order-left">
+    <div class="eyebrow" data-i18n="orderEyebrow">Limited launch offer</div>
+    <h2 class="section-title" data-i18n="orderTitle">Order your Relyxai today.</h2>
+    <p class="section-sub" data-i18n="orderSub">
+    Get premium neck relaxation at home with EMS pulse therapy, heat comfort, and portable design.
+    </p>
+
+    <div class="order-price">
+    <span>$31.99</span>
+    <small data-i18n="regularPrice">Regular price $59.99</small>
+    </div>
+
+    <div class="order-benefits">
+    <div data-i18n="benefit1">✓ Free shipping in USA</div>
+    <div data-i18n="benefit2">✓ 30-day returns</div>
+    <div data-i18n="benefit3">✓ 1-year warranty</div>
+    <div data-i18n="benefit4">✓ Secure Stripe checkout</div>
+    </div>
+</div>
+
+<div class="order-right">
+    <form id="orderForm" class="order-form">
+    <h3 data-i18n="formTitle">Shipping details</h3>
+
+    <label for="oName" data-i18n="labelName">Full name</label>
+    <input type="text" id="oName" placeholder="John Smith" />
+
+    <label for="oEmail" data-i18n="labelEmail">Email address</label>
+    <input type="email" id="oEmail" placeholder="john@email.com" />
+
+    <label for="oStreet" data-i18n="labelStreet">Street address</label>
+    <input type="text" id="oStreet" placeholder="123 Main Street" />
+
+    <div class="form-row">
+        <div>
+        <label for="oCity" data-i18n="labelCity">City</label>
+        <input type="text" id="oCity" placeholder="Miami" />
+        </div>
+
+        <div>
+        <label for="oZip" data-i18n="labelZip">ZIP code</label>
+        <input type="text" id="oZip" placeholder="33101" />
+        </div>
+    </div>
+
+    <label for="oCountry" data-i18n="labelCountry">Country</label>
+    <select id="oCountry">
+        <option value="US">United States</option>
+        <option value="CA">Canada</option>
+    </select>
+
+    <label for="oState" data-i18n="labelState">State</label>
+    <select id="oState"></select>
+
+    <label for="oQty" data-i18n="labelQty">Quantity</label>
+    <select id="oQty">
+        <option value="YOUR_STRIPE_LINK_FOR_1_UNIT">1 Relyxai — $31.99</option>
+        <option value="YOUR_STRIPE_LINK_FOR_2_UNITS">2 Relyxai — $54.99</option>
+        <option value="YOUR_STRIPE_LINK_FOR_3_UNITS">3 Relyxai — $74.99</option>
+    </select>
+
+    <button type="submit" id="stripeBtn" class="stripe-btn">
+        <span id="btnText" data-i18n="checkoutBtn">Continue to secure checkout</span>
+        <span id="btnLoader" data-i18n="loadingText">Loading...</span>
+    </button>
+
+    <p id="formOk"></p>
+
+    <p class="secure-note" data-i18n="secureNote">
+        Secure checkout powered by Stripe. Your payment information is protected.
+    </p>
+    </form>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+<div class="eyebrow" data-i18n="faqEyebrow">Questions</div>
+<h2 class="section-title" data-i18n="faqTitle">Frequently asked questions.</h2>
+
+<div class="faq-list">
+    <div class="faq-item">
+    <h4 data-i18n="faq1Title">How long should I use Relyxai?</h4>
+    <p data-i18n="faq1Text">
+        Most people use it in short sessions of around 15 minutes.
+        Always follow the product instructions included with your device.
+    </p>
+    </div>
+
+    <div class="faq-item">
+    <h4 data-i18n="faq2Title">Does it use batteries?</h4>
+    <p data-i18n="faq2Text">
+        Relyxai is rechargeable with a standard USB cable and fully charges in about 3 hours.
+        You can use it at home, traveling, or during your relaxation routine.
+    </p>
+    </div>
+
+    <div class="faq-item">
+    <h4 data-i18n="faq3Title">Is shipping really free?</h4>
+    <p data-i18n="faq3Text">
+        Yes. Shipping is 100% free for all orders within the United States.
+    </p>
+    </div>
+
+    <div class="faq-item">
+    <h4 data-i18n="faq4Title">Is this a medical device?</h4>
+    <p data-i18n="faq4Text">
+        Relyxai is a wellness product. It is not intended to diagnose,
+        treat, cure, or prevent any disease. Consult a doctor if you have medical concerns.
+    </p>
+    </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="footer-brand">
+    <div class="brand-mark">R</div>
+    <div class="brand-text">
+    <span>Relyxai</span>
+    <small data-i18n="brandSub">Smart Relief</small>
+    </div>
+</div>
+
+<p>© 2026 Relyxai. All rights reserved.</p>
+<p class="footer-small">Smart Neck Relief · EMS + Heat Therapy · Relyxai.com</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
