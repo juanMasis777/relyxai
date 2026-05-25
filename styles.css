@@ -1489,3 +1489,153 @@ grid-template-columns: 1fr;
 padding: 28px;
 }
 }
+
+/* RELYXAI LOGO IMAGE */
+
+.logo {
+display: flex;
+align-items: center;
+}
+
+.logo a {
+display: flex;
+align-items: center;
+text-decoration: none;
+}
+
+.logo-img {
+width: 170px;
+height: auto;
+display: block;
+object-fit: contain;
+}
+
+.footer-brand {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.footer-logo-img {
+width: 220px;
+height: auto;
+display: block;
+object-fit: contain;
+margin: 0 auto 18px;
+}
+
+/* MOBILE LOGO SIZE */
+@media (max-width: 600px) {
+.logo-img {
+width: 135px;
+}
+
+.footer-logo-img {
+width: 170px;
+}
+}
+
+/* ============================= */
+/* NAVBAR ADJUSTMENTS RELYXAI */
+/* ============================= */
+
+/* Barra negra más delgada */
+#nav {
+min-height: 78px !important;
+padding: 12px 5% !important;
+}
+
+/* Logo más grande */
+.logo-img {
+width: 230px !important;
+max-height: 70px !important;
+object-fit: contain !important;
+display: block !important;
+}
+
+/* Links del menú más grandes */
+.nav-links a {
+font-size: 16px !important;
+font-weight: 700 !important;
+}
+
+/* Espacio entre links del menú */
+.nav-links {
+gap: 32px !important;
+}
+
+/* Botón amarillo más proporcionado con la barra más delgada */
+.nav-cta {
+padding: 13px 28px !important;
+font-size: 15px !important;
+font-weight: 800 !important;
+}
+
+/* Botón de idioma */
+.lang-btn {
+width: 48px !important;
+height: 48px !important;
+font-size: 15px !important;
+font-weight: 800 !important;
+}
+
+/* Ajuste para tablets */
+@media (max-width: 1000px) {
+.logo-img {
+width: 190px !important;
+}
+
+.nav-links a {
+font-size: 15px !important;
+}
+
+#nav {
+padding: 12px 4% !important;
+}
+}
+
+/* Ajuste para móviles */
+@media (max-width: 700px) {
+.logo-img {
+width: 160px !important;
+}
+
+#nav {
+min-height: 70px !important;
+padding: 10px 20px !important;
+}
+}
+
+/* LOGO AJUSTADO PARA NAVBAR */
+
+.logo-img {
+width: 260px !important;
+height: auto !important;
+display: block !important;
+object-fit: contain !important;
+}
+
+#nav {
+min-height: 72px !important;
+padding: 8px 5% !important;
+}
+
+.nav-links a {
+font-size: 16px !important;
+font-weight: 700 !important;
+}
+
+@media (max-width: 700px) {
+.logo-img {
+width: 180px !important;
+}
+
+#nav {
+min-height: 68px !important;
+padding: 8px 20px !important;
+}
+}
+
+.logo-img {
+    width: 340px !important;
+}
