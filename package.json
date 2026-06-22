@@ -1,0 +1,24 @@
+{
+  "name": "relyxai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanMasis777/relyxai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/juanMasis777/relyxai/issues"
+  },
+  "homepage": "https://github.com/juanMasis777/relyxai#readme",
+  "dependencies": {
+    "stripe": "^22.2.2"
+  }
+}
