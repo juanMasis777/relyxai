@@ -1,6 +1,8 @@
 import Stripe from "stripe";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+// Esta función solo verifica la firma del webhook (usa STRIPE_WEBHOOK_SECRET),
+// nunca llama a la API de Stripe, así que no necesita una clave secreta real.
+const stripe = new Stripe("placeholder");
 
 // Stripe necesita el cuerpo crudo (sin parsear) para verificar la firma
 export const config = {
